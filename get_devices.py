@@ -15,13 +15,7 @@ headers = {'Authorization': "Token " + token}
 r = requests.get(url, headers=headers)
 
 output = json.loads(r.text)
-results = output['results']
-
-devices = []
-
-for k, v in enumerate(results):
-    devices.append(v)
+devices = output['results']
 
 for each in devices:
-    print(each)
-    print(type(each))
+    pprint(each['address'])
