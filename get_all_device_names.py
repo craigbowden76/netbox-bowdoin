@@ -30,4 +30,6 @@ device_name = (list(set(devices_names)))
 device_name.sort()
 
 for those in device_name:
+    if "-gw-" in those:
+        continue
     print(those)
