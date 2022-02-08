@@ -6,7 +6,7 @@ import json
 # https://netbox.bowdoin.edu/api/docs/
 
 base_url = 'https://netbox.bowdoin.edu/'
-uri = 'api/dcim/devices/?limit=2000'
+uri = 'api/dcim/devices/?limit=0'
 url = base_url + uri
 token = getpass()
 
